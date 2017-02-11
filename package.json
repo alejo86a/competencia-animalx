@@ -1,0 +1,30 @@
+{
+  "name": "competencia-animalx",
+  "version": "1.1.1",
+  "description": "competencia-animalx: An Ionic project",
+  "dependencies": {
+    "angular": "^1.6.2",
+    "angular-ui-router": "^1.0.0-beta.1",
+    "angularfire": "^2.3.0",
+    "firebase": "^3.6.9",
+    "gulp": "^3.5.6",
+    "gulp-concat": "^2.2.0",
+    "gulp-minify-css": "^0.3.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^2.0.4"
+  },
+  "devDependencies": {
+    "bower": "^1.3.3",
+    "gulp-util": "^2.2.14",
+    "shelljs": "^0.3.0"
+  },
+  "cordovaPlugins": [
+    "cordova-plugin-whitelist",
+    "cordova-plugin-console",
+    "cordova-plugin-statusbar",
+    "cordova-plugin-device",
+    "cordova-plugin-splashscreen",
+    "ionic-plugin-keyboard"
+  ],
+  "cordovaPlatforms": []
+}
