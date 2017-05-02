@@ -42,15 +42,105 @@ angular.module('starter.controllers', [])
 })
 
 .controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
-  ];
+
+  $scope.torneo = {
+          "bases": [{
+                  "juez": "",
+                  "numeroBase": "1"
+              },
+              {
+                  "juez": "",
+                  "numeroBase": "2"
+              },
+              {
+                  "juez": "",
+                  "numeroBase": "3"
+              },
+              {
+                  "juez": "",
+                  "numeroBase": "4"
+              },
+              {
+                  "juez": "",
+                  "numeroBase": "5"
+              },
+              {
+                  "juez": "",
+                  "numeroBase": "6"
+              }
+          ],
+          "juecesDisponibles": [{
+              "nombreJuez": ""
+          }],
+          "nombreTorneo": "",
+          "participantesDisponibles": [{
+              "asignado": "",
+              "nombre": ""
+          }]
+      };
+
+
 })
 
+
+
 .controller('PlaylistCtrl', function($scope, $stateParams) {
+  $scope.numeroBase = $stateParams.playlistId;
+
+  $scope.torneo = {
+          "bases": [{
+                  "juez": "",
+                  "numeroBase": "1"
+              },
+              {
+                  "juez": "",
+                  "numeroBase": "2"
+              },
+              {
+                  "juez": "",
+                  "numeroBase": "3"
+              },
+              {
+                  "juez": "",
+                  "numeroBase": "4"
+              },
+              {
+                  "juez": "",
+                  "numeroBase": "5"
+              },
+              {
+                  "juez": "",
+                  "numeroBase": "6"
+              }
+          ],
+          "juecesDisponibles": [{
+              "nombreJuez": "mario"},{
+              "nombreJuez": "pedrito"},{
+              "nombreJuez": "jhon"},{
+              "nombreJuez": "jesus"},{
+              "nombreJuez": "fernando"},{
+              "nombreJuez": "cristian"
+          }],
+          "nombreTorneo": "",
+          "participantesDisponibles": [{
+              "asignado": "",
+              "nombre": "pedrito"
+          },{
+              "asignado": "",
+              "nombre": "fulanito"
+          },{
+              "asignado": "",
+              "nombre": "peranito"
+          },{
+              "asignado": "",
+              "nombre": "ronsito"
+          },{
+              "asignado": "",
+              "nombre": "guarito"
+          },{
+              "asignado": "",
+              "nombre": "cervecito"
+          }]
+      };
+
 });

@@ -1,5 +1,9 @@
-<ion-view view-title="Playlist">
+<ion-view view-title="Base #{{numeroBase}}">
   <ion-content>
-    <h1>Playlist</h1>
+    <ion-list>
+      <ion-item ng-repeat="juez in torneo.juecesDisponibles" href="#/app/playlists/{{base.numeroBase}}">
+        {{juez.nombreJuez}}
+      </ion-item>
+    </ion-list>
   </ion-content>
 </ion-view>
